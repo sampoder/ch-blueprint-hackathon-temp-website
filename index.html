@@ -1,5 +1,5 @@
-<div style="height: 250px; background: linear-gradient(176deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.45) 57%, rgba(0,0,0,0.4) 100%), url('https://sampoder.js.org/ch-blueprint-hackathon-temp-website/background.jpg'); display: flex; align-items: center; justify-content: center; background-position: center; background-size: cover; color: white; position: relative;">
-  <img src="https://sampoder.js.org/ch-blueprint-hackathon-temp-website/logos.png" width="180px" style="filter: invert(1); position: absolute; top: 32px; right: 32px" />
+<div style="min-height: 250px; background: linear-gradient(176deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.45) 57%, rgba(0,0,0,0.4) 100%), url('https://sampoder.js.org/ch-blueprint-hackathon-temp-website/background.jpg'); display: flex; align-items: flex-start; justify-content: center; background-position: center; background-size: cover; color: white; position: relative; flex-direction: column">
+  <img src="https://sampoder.js.org/ch-blueprint-hackathon-temp-website/logos.png" width="180px" style="filter: invert(1); margin-left: 16px; margin-top: 32px;" class="logos" />
   <div style="text-align: left; width: min(800px, calc(100vw - 32px)); margin: auto; display: flex; flex-direction: column; gap: 16px;">
     <h1 style="margin-block: 0em; font-size: 2.7em">
       Hack for Impact
@@ -7,7 +7,7 @@
     <h4 style="margin-block: 0em">
       February 25, 2024  @ University of California, Berkeley
     </h4>
-    <h3 style="margin-block: 0em; max-width: 600px;">
+    <h3 style="margin-block: 0em; max-width: 600px; margin-bottom: 32px;">
       We're connecting a community of leaders, creators, and change makers to tackle social challenges.
     </h3>
   </div>
@@ -26,7 +26,7 @@
   <h3>
     Past Sponsors
   </h3>
-  <img src="https://sampoder.js.org/ch-blueprint-hackathon-temp-website/sponsors.png" width="500px" />
+  <img src="https://sampoder.js.org/ch-blueprint-hackathon-temp-website/sponsors.png" style="max-width: 500px; width: 80vw" />
   <p style="margin-top: 32px">
     Looking to get in touch? Email <i><a href="mailto:external@calblueprint.org">external@calblueprint.org</a></i>.
   </p>
@@ -40,5 +40,13 @@
   }
   a {
     color: #3D3935
+  }
+  @media (min-width: 600px) {
+    .logos {
+      position: absolute; 
+      top: 32px; 
+      right: 32px;
+      margin-top: 0px!important;
+    }
   }
 </style>
